@@ -1,7 +1,10 @@
 {
-  "name": "react-sidebar-sub-v2",
+  "name": "sorting-visualizer",
   "version": "0.1.0",
-  "private": true,
+  "engines": {
+    "npm": "8.x"
+  },
+  "main": "./src/index.js",
   "dependencies": {
     "@material-ui/core": "^4.11.4",
     "@material-ui/icons": "^4.11.2",
