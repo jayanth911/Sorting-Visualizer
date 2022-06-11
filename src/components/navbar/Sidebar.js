@@ -153,7 +153,7 @@ class Sidebar extends Component{
       <React.Fragment>
         <IconContext.Provider value={{ color: '#fff' }}>
           <div className="nav_bar" style={{display:"block"}}>
-          <Nav>
+          <Nav style={{display:"flex"}}>
             <NavIcon >
               {
                 !this.state.sidebar?<p className ="main_logo" onClick={this.showSidebar.bind(this)}>Start Visualizing <span><ArrowLeftIcon fontSize="large"/></span></p>:<div></div>
@@ -163,8 +163,13 @@ class Sidebar extends Component{
             {/* <NavIcon to='/'>
               <FaIcons.FaBars onClick={showSidebar} />
             </NavIcon> */}
+          
+            <a href="https://github.com/jayanth911/Sorting-Visualizer" target="_blank" rel="noopener noreferrer" style={{marginLeft: "auto", paddingRight: "20px"}}>
+              <img src="github.svg" alt="repo_icon" style={{width:"50px"}}></img>
+            </a>
           </Nav>
           </div>
+
           
           <SidebarNav sidebar={this.state.sidebar}>
             <SidebarWrap>
